@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+header {
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #33417c;
+    font-weight: 600;
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #e76128;
+}
+
+.banner {
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.height {
+    min-height: 90vh;
+}
+
+.banner h1 {
+    color: #fff;
+    font-size: 82px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.icon {
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    animation: anim 1s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anim {
+    0% {
+        bottom: 60px;
+    }
+
+    100% {
+        bottom: 40px;
+    }
+}
+
+.who-we-are {
+    padding: 100px 0;
+}
+
+.who-we-are span {
+    display: block;
+    background: #e76128;
+    height: 3px;
+    width: 0px;
+    margin-top: 50px;
+    transition: .4s all ease-in-out;
+}
+
+.who-we-are:hover span {
+    width: 50px;
+}
+
+.who-we-are h1 {
+    color: #33417c;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.who-we-are p {
+    color: #bab5b2;
+    margin: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.what-we-do {
+    padding: 50px 0;
+    background-color: #fbfbfb;
+    background-image: url(../images/banner-1.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+.heading {
+}
+
+.heading span {
+    display: block;
+    background: #e76128;
+    height: 3px;
+    width: 0px;
+    margin: auto;
+    transition: .4s all ease-in-out;
+}
+
+.what-we-do:hover span {
+    width: 50px;
+}
+
+.heading h1 {
+    color: #33417c;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.what-we-do-item {
+    position: relative;
+}
+
+.what-we-do-item img {
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+
+.content h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 23px;
+}
+
+.arrow {
+    position: absolute;
+    left: 45%;
+    bottom: 50px;
+    color: #fff;
+    font-size: 25px;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+
+.what-we-do-item:hover .content {
+    opacity: 1;
+    top: 50%;
+}
+
+.what-we-do-item:hover .arrow {
+    opacity: 1;
+    left: 50%;
+}
+
+.what-we-do-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    transition: .4s all ease-in-out;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,36236d+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(30, 87, 153, 0) 0%, rgba(54, 35, 109, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30, 87, 153, 0) 0%, rgba(54, 35, 109, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30, 87, 153, 0) 0%, rgba(54, 35, 109, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001e5799', endColorstr='#36236d', GradientType=0);
+    /* IE6-9 */
+}
+
+.what-we-do-item:hover::before {
+    height: 100%;
+}
+
+.attorneys {
+    background-image: url(../images/banner-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.attorneys::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #402a803d;
+}
+
+.heading-two {
+    margin-top: 120px;
+}
+
+.heading-two span {
+    display: block;
+    background: #e76128;
+    height: 3px;
+    width: 0px;
+    margin-top: 50px;
+    transition: .4s all ease-in-out;
+}
+
+.attorneys:hover span {
+    width: 50px;
+}
+
+.heading-two h1 {
+    color: #fff;
+    margin: 20px 0;
+}
+
+.heading-two p {
+    color: #bab5b2;
+    margin: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 28px;
+}
+
+.heading-two a {
+    color: #e76128;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.attorneys-item {
+    position: relative;
+}
+
+.attorneys-item img {
+}
+
+.attorneys-content {
+    position: absolute;
+    left: 50px;
+    bottom: 45px;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+
+.attorneys-item:hover .attorneys-content {
+    opacity: 1;
+    bottom: 50px;
+}
+
+.attorneys-content h3 {
+    color: #fff;
+    font-size: 23px;
+}
+
+.attorneys-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    transition: .4s all ease-in-out;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,36236d+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(30, 87, 153, 0) 0%, rgba(54, 35, 109, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30, 87, 153, 0) 0%, rgba(54, 35, 109, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30, 87, 153, 0) 0%, rgba(54, 35, 109, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001e5799', endColorstr='#36236d', GradientType=0);
+    /* IE6-9 */
+}
+
+.attorneys-item:hover::before {
+    height: 100%;
+}
+
+.languages {
+    padding: 100px 0;
+}
+
+.heading-three {
+}
+
+.heading-three span {
+    display: block;
+    background: #e76128;
+    height: 3px;
+    width: 0px;
+    margin: auto;
+    transition: .4s all ease-in-out;
+}
+
+.languages:hover span {
+    width: 50px;
+}
+
+.heading-three h1 {
+    color: #33417c;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.languages-content {
+}
+
+.languages-content h1 {
+    color: #33417c;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.languages-content p {
+    color: #bab5b2;
+    margin: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.languages-content a {
+    color: #e76128;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contact {
+    background-color: #36226f;
+    padding: 50px 0;
+}
+
+.heading-four h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.heading-four span {
+    display: block;
+    background: #e76128;
+    height: 3px;
+    width: 0px;
+    margin: auto;
+    transition: .4s all ease-in-out;
+}
+
+.contact:hover span {
+    width: 50px;
+}
+
+.form {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.form input {
+    background-color: transparent;
+    border: none;
+    border-radius: inherit;
+    border-bottom: 1px solid black;
+    font-size: 17px;
+    border-color: #bab5b2;
+    padding: 10px 0;
+}
+
+.form textarea {
+    background-color: transparent;
+    border: none;
+    border-radius: inherit;
+    border-bottom: 1px solid black;
+    border-color: #bab5b2;
+    padding: 10px 0;
+}
+
+.form input[type="submit"] {
+    background-color: #e76128;
+    color: #fff;
+    border: none;
+    padding: 8px 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 25px 0;
+    font-weight: 600;
+}
+
+.form input:focus, .form textarea:focus {
+    outline: none;
+    background-color: transparent;
+    border-color: #e76128;
+    box-shadow: none;
+    color: #fff;
+}
+
+.form input::placeholder, .form textarea::placeholder {
+    color: #fff;
+}
+
+footer {
+    background-color: #16102b;
+    padding: 50px 0;
+}
+
+footer p {
+    color: #bab5b2;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 28px;
+    margin-left: 60px;
+}
+
+.footer-content {
+}
+
+.footer-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content ul li {
+    margin-left: auto;
+}
+
+.footer-content ul li a {
+    color: #fbfbfb;
+}
